@@ -1,83 +1,70 @@
-# Multiple Disease Prediction Web App
+# NeuroVision: Forecasting Health on the Spectrum 
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+This repository contains machine learning models and techniques for predicting Autism, Parkinson's Disease, Stroke, Covid-19 infections, Diabetes, Lung Cancer and Anemia. The project aims to leverage artificial intelligence and data science to provide insights into these medical conditions, aiding in early diagnosis and better healthcare management.
 
+### About the Project:
+The project focuses on utilizing machine learning algorithms to analyze relevant datasets and develop predictive models for each condition. By training on diverse datasets and employing advanced techniques, we aim to achieve accurate predictions that can assist healthcare professionals in decision-making and patient care.
 
-*A web application for predicting multiple diseases using machine learning models. This project includes prediction models for diabetes, Parkinson's disease,lung cancer, Autism, Stroke, COVID 19 and Anemia*
+### Datasets:
+We have sourced publicly available datasets on Kaggle for each medical condition:
 
-## Table of Contents
+- **Autism**: The Autism Screening Adult Data includes demographic and behavioral features for individuals to predict autism spectrum disorder (ASD).
+- **Parkinson's Disease**: The Parkinson's Telemonitoring Data provides voice recordings and clinical measurements for predicting the severity of Parkinson's disease symptoms.
+- **Stroke**: The Stroke Prediction Dataset contains medical records and lifestyle information to predict the likelihood of stroke occurrence.
+- **Covid-19**: The Covid-19 Data includes epidemiological information and demographic data to predict Covid-19 infections.
+- **Diabetes**: The Diabetes Dataset contains clinical measurements and patient information such as blood glucose levels, BMI, age, and insulin levels to predict the likelihood of diabetes.
+- **Lung Cancer**: The Lung Cancer Data includes demographic information, medical history, and diagnostic imaging features to predict the presence and progression of lung cancer.
+- **Anemia**: The Anemia Dataset provides hematological parameters and demographic data to predict the occurrence and severity of anemia in individuals.
 
-- [About](#about)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Models](#models)
-- [Contributing](#contributing)
-- [License](#license)
+### Models and Techniques:
+For each medical condition, we have employed various machine learning algorithms and techniques tailored to the specific characteristics of the data:
 
-## About
+- **Autism**:
+  - Algorithm: Logistic Regression
+  - Techniques: Feature engineering and cross-validation.
+  - Dataset(Autism Toddler) :  https://www.kaggle.com/datasets/fabdelja/autism-screening-for-toddlers
+  - Dataset(Autism Adults) : https://www.kaggle.com/datasets/andrewmvd/autism-screening-on-adults?resource=download
 
-*This web app provides a user-friendly interface to predict multiple diseases based on various input features. The machine learning models used in this application are trained on relevant datasets to make accurate predictions.*
+- **Parkinson's Disease**:
+  - Algorithm : Support Vector Machine (SVM)
+  - Techniques : Kernel methods and hyperparameter tuning.
+  - Dataset : https://www.kaggle.com/datasets/vikasukani/parkinsons-disease-data-set
 
-The diseases currently supported by this web app include:
-- Diabetes
-- Parkinson's disease
-- Covid-19
-- Lung Cancer
-- Autism
-- Stroke
-- Anemia
+- **Stroke**:
+  - Algorithm : Random Forest, logistic regression, svm, decision tree, naive bayes
+  - Techniques : Feature importance analysis and ensemble techniques.
+  - Dataset : https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 
-## Web App
+- **Covid-19**:
+  - Algorithms : Logistic Regression, SVM and decision trees
+  - Techniques : Data balancing using SMOTE and feature scaling for normalization.
+  - Dataset : https://www.kaggle.com/datasets/krishnaiitm/covid-19-clean-completecsv
 
-- [Access the Web App](https://multiple-disease-prediction-apse-aiml.streamlit.app/) - Use the web app to predict multiple diseases.
+- **Diabetes**:
+  - Algorithm: Support Vector Machine (SVM)
+  - Techniques: Feature selection, cross-validation, and data normalization.
+  - Dataset: https://www.kaggle.com/datasets/akshaydattatraykhare/diabetes-dataset
 
-## Installation
+- **Lung Cancer**:
+  - Algorithm: Logistic Regression (LR)
+  - Techniques: Feature engineering, dimensionality reduction, and model evaluation using cross-validation.
+  - Dataset: https://www.kaggle.com/datasets/mysarahmadbhat/lung-cancer
 
-1. Clone the repository:
-<pre>
-git clone https://github.com/gunn333/Multiple-Disease-Prediction-AIML.git
-</pre>
+- **Anemia**:
+  - Algorithm: Support Vector Machine (SVM)
+  - Techniques: Feature selection, SMOTE for handling class imbalance, and cross-validation.
+  - Dataset: https://www.kaggle.com/datasets/biswaranjanrao/anemia-dataset
 
+Each model is trained and evaluated using appropriate techniques to ensure robustness and accuracy in predictions.
 
-2. Install the required dependencies:
-<pre>
-pip install -r requirements.txt
-</pre>
+### Results and Evaluation:
+The models have been evaluated using standard performance metrics such as accuracy, precision, recall, and F1-score. Detailed evaluation reports, confusion matrices, and visualizations are provided for each model to assess their effectiveness and reliability.
 
+### Usage:
+Users can clone the repository, preprocess the datasets, train the models using provided scripts, and make predictions on new data. Instructions for data preprocessing, model training, and prediction are provided in the respective directories.
 
+### Contact:
+For inquiries, feedback, or collaboration opportunities, feel free to contact our team APSC :
 
-## Usage
-
-1. Run the web app:
-<pre>
-streamlit run app.py
-</pre>
-
-2. Open your web browser and go to `http://localhost:8501/` to access the web app.
-
-3. Select the disease prediction page you want to use and provide the required input features.
-
-4. Click on the **Test Result** button to generate the prediction result.
-
-## Models
-
-The machine learning models used in this web app are trained on publicly available datasets specific to each disease. Here is a brief description of each model:
-
-- Diabetes Model: This model predicts the likelihood of a person having diabetes based on input features such as glucose level, blood pressure, BMI, etc.
-
-- Parkinson's Disease Model: This model predicts the presence of Parkinson's disease in a person based on features extracted from voice recordings.
-
-
-## Contributing
-
-*Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.*
-
-## License
-
-*This project is licensed under the [MIT License](LICENSE).*
-
----
-
-
-
-
+- [Gunn Arora](https://www.linkedin.com/in/gunn-arora-3a0a9b291/)
+- [Gracy Gulati](https://www.linkedin.com/in/gracy-gulati-956061292/)
